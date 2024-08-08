@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from django.conf.urls import url
+from django.urls import path
 
 from envelope.views import ContactView
 
 
 urlpatterns = [
-    url(r'^$', ContactView.as_view(), name='envelope-contact'),
+    path(r'^$', ContactView.as_view(), name='envelope-contact'),
 ]
